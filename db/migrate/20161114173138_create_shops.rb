@@ -7,6 +7,7 @@ class CreateShops < ActiveRecord::Migration
       t.string :state
       t.integer :zip
 
+
       t.timestamps null: false
     end
   end
