@@ -11,10 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161114212250) do
+ActiveRecord::Schema.define(version: 20161115212405) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "deals", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "imgUrl"
+    t.integer  "shops_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "shop_users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "shops_id"
+  end
 
   create_table "shops", force: :cascade do |t|
     t.string   "name"
@@ -26,6 +45,15 @@ ActiveRecord::Schema.define(version: 20161114212250) do
     t.datetime "updated_at", null: false
     t.float    "latitude"
     t.float    "longitude"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end
