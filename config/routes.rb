@@ -5,6 +5,4 @@ Rails.application.routes.draw do
   resources :users
   resources :deals
   resources :shops
-
-  root "shops#index"
 end
