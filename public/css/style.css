@@ -1,3 +1,23 @@
+.thing {
+  position: relative;
+  height: 600px;
+  width: 1500px;
+}
+
+
 .container {
+  position: relative;
+  bottom: 25em;
   width: 32em;
+}
+
+
+.button {
+  padding-top: 1.45em;
+  padding-bottom: 1em;
+  padding-left: 0em;
+}
+
+.content {
+
 }
