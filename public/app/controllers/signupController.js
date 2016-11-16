@@ -1,5 +1,5 @@
 app.controller('auth', function($scope) {
-  
+
     $scope.userObj = {}
     $scope.businessObj = {}
 

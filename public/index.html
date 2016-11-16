@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 
 <head>
     <title>CoffeeShopSocial</title>
+
+    <script src="https://code.angularjs.org/1.5.8/angular.js" charset="utf-8"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular-route.js" charset="utf-8"></script>
     <!-- Latest compiled and minified CSS -->
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
@@ -15,11 +18,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <script src="/app/app.js"></script>
+    <script src="/app/controllers/main.js"></script>
+    <script src="/app/controllers/signupController.js"></script>
 
 </head>
 
-<body>
-
+<body ng-controller="mainController">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
