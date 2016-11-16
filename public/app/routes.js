@@ -2,7 +2,7 @@ app.config(function($routeProvider) {
   console.log('attempt to route this YO!');
     $routeProvider
         .when('/', {
-            templateUrl: './app/views/shop.html',
+            templateUrl: './app/views/main.html',
             controller: 'ShopController'
         })
         .when('/signup', {
