@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+deals = Deal.create([{
+  title: 'Six Joints for $24.00',
+  description: 'pre-rolled top-shelf joints',
+  imgUrl: 'http://www.filsantejeunes.com/wp-content/uploads/2006/09/joint.jpg',
+  shops_id: 1
+  }])
