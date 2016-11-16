@@ -4,11 +4,9 @@ app.controller('ShopController', function ($scope, ShopService, $location) {
     $scope.view = {}
     ShopService.all().then(shops => {
         $scope.shops = shops
-        console.log("shop", shops);
-
-        console.log("shops.data", shops.data);
+        // console.log("shop", shops);
+        //
+        // console.log("shops.data", shops.data);
 
     })
   })
-
-console.log('included ShopController');

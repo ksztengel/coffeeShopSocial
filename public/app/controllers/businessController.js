@@ -1,5 +1,5 @@
-app.controller('auth', function($scope) {
-  
+app.controller('BusinessController', function($scope, BusinessService) {
+  console.log('in business controller');
     $scope.userObj = {}
     $scope.businessObj = {}
 

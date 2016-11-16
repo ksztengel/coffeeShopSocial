@@ -5,9 +5,13 @@ app.config(function($routeProvider) {
             templateUrl: './app/views/shop.html',
             controller: 'ShopController'
         })
-        .otherwise('/', {
+        .when('/signup', {
             templateUrl: './app/views/businessSignup.html',
-            controller: 'auth'
+            controller: 'BusinessController'
+        })
+        .when('/deals', {
+            templateUrl: './app/views/deals.html',
+            controller: 'DealController'
         })
 })
 
