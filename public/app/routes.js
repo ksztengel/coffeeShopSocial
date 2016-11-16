@@ -1,12 +1,19 @@
 app.config(function($routeProvider) {
+  console.log('attempt to route this YO!');
     $routeProvider
-
         .when('/', {
-            templateUrl: '',
-            controller: ''
+            templateUrl: './app/views/shop.html',
+            controller: 'ShopController'
         })
-        .when('businessSignup', {
-            templateUrl: 'businessSignup.html',
-            controller: 'auth'
+        .when('/signup', {
+            templateUrl: './app/views/businessSignup.html',
+            controller: 'BusinessController'
+        })
+        .when('/deals', {
+            templateUrl: './app/views/deals.html',
+            controller: 'DealController'
+
         })
 })
+
+console.log('routes included');
