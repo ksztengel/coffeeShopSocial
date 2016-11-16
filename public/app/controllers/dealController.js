@@ -3,7 +3,7 @@ app.controller('DealController', function ($scope, DealService, $routeParams, $l
     console.log('in deal controller');
     $scope.view = {}
     DealService.all().then(deals => {
-        $scope.deals = deals
+        $scope.deals = deals.data
         console.log("deals", deals);
         console.log("deals.data", deals.data);
     })
