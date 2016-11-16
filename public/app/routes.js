@@ -6,8 +6,8 @@ app.config(function($routeProvider) {
             controller: 'ShopController'
         })
         .otherwise('/', {
-            templateUrl: './app/views/shop.html',
-            controller: 'ShopController'
+            templateUrl: './app/views/businessSignup.html',
+            controller: 'auth'
         })
 })
 

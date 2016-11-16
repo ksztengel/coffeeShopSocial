@@ -1,5 +1,5 @@
 'use strict'
-app.controller('ShopController', function ($scope,ShopService, $location) {
+app.controller('ShopController', function ($scope, ShopService, $location) {
     console.log('in shop controller');
     $scope.view = {}
     ShopService.all().then(shops => {
