@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 .mainText {
   font-family: 'Rye', cursive;
   color: red;
   text-align: center;
   font-size: 7em;
+=======
+.imgContainer {
+>>>>>>> 47b02c52d28c54858f113a155d4932b7222403d0
   position: relative;
   top: 1.5em;
   z-index: 1;

@@ -4,6 +4,11 @@ app.service('ShopService', function($http) {
         all: function() {
           // console.log("doing cool http stuff");
             return $http.get('/shops.json');
+        },
+
+        one: function(id) {
+
+            return $http.get('/shops/' + id + '.json');
         }
 
       }})
