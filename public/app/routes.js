@@ -13,6 +13,10 @@ app.config(function($routeProvider) {
             templateUrl: './app/views/deals.html',
             controller: 'DealController'
         })
+        .when('/newuser', {
+            templateUrl: './app/views/userSignup.html',
+            controller: 'DealController'
+        })
 })
 
 console.log('routes included');
