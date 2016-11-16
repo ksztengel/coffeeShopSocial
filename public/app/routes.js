@@ -9,10 +9,19 @@ app.config(function($routeProvider) {
             templateUrl: './app/views/businessSignup.html',
             controller: 'BusinessController'
         })
+        .when('/newdeal', {
+            templateUrl: './app/views/deal.html',
+            controller: 'DealController'
+
+        })
         .when('/deals', {
             templateUrl: './app/views/deals.html',
             controller: 'DealController'
 
+        })
+        .when('/newuser', {
+            templateUrl: './app/views/userSignup.html',
+            controller: 'DealController'
         })
 })
 
