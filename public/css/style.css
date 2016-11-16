@@ -1,29 +1,26 @@
-<<<<<<< HEAD
+
 .mainText {
   font-family: 'Rye', cursive;
   color: red;
   text-align: center;
   font-size: 7em;
-=======
-.imgContainer {
->>>>>>> 47b02c52d28c54858f113a155d4932b7222403d0
   position: relative;
   top: 1.5em;
   z-index: 1;
-
+  text-shadow: .04em .04em black;
 }
 
 .imgContainer {
   position: relative;
   bottom: 10em;
-  width: 105em;
+  width: 100%;
   height: 37em;
 }
 
 img {
-  width: auto;
-  height: 40em;
-  opacity: .9;
+  width: 100%;
+  height: auto;
+  opacity: 1;
 }
 
 .container {
@@ -31,7 +28,6 @@ img {
   bottom: 25em;
   width: 32em;
 }
-
 
 .button {
   padding-top: 1.45em;
