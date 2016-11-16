@@ -1,8 +1,12 @@
-app.controller('ShopController', function ($scope, $cookies, ShopService, $location, ) {
-
+'use strict'
+app.controller('ShopController', function ($scope, ShopService, $location) {
+    console.log('in shop controller');
     $scope.view = {}
     ShopService.all().then(shops => {
-        $scope.shops = shops.data
-        console.log("shops.data", shops.data);
+        $scope.shops = shops
+        // console.log("shop", shops);
+        //
+        // console.log("shops.data", shops.data);
 
     })
+  })
