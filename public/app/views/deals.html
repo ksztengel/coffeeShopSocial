@@ -1,10 +1,16 @@
-<div ng-repeat="deal in deals"class="dealCard">
+<div ng-repeat="deal in deals" class="dealCard">
   <div class="panel panel-default">
     <div class="panel-body">
-      <h3>{{deal.deal}}</h3>
+      <span>{{deal.logo}}</span><h3>{{deal.title}}</h3>
+
+      <span ng-click="user.favorites" type="button" class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+
       <hr>
       <p>{{deal.name}}</p>
-      <img src="{{deal.img}}" alt="Business Image" />
+      <p>
+        distance from the user
+      </p>
+      <img src="{{deal.imgUrl}}" alt="Business Image" />
 
     </div>
   </div>

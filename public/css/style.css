@@ -1,9 +1,26 @@
-.thing {
+.mainText {
+  font-family: 'Rye', cursive;
+  color: red;
+  text-align: center;
+  font-size: 7em;
   position: relative;
-  height: 600px;
-  width: 1500px;
+  top: 1.5em;
+  z-index: 1;
+
 }
 
+.imgContainer {
+  position: relative;
+  bottom: 10em;
+  width: 105em;
+  height: 37em;
+}
+
+img {
+  width: auto;
+  height: 40em;
+  opacity: .9;
+}
 
 .container {
   position: relative;
