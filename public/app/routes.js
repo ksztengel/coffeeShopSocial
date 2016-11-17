@@ -23,9 +23,9 @@ app.config(function($routeProvider) {
             templateUrl: './app/views/userSignup.html',
             controller: 'DealController'
         })
-        .when('/deal/:id', {
+        .when('/deals/:id', {
             templateUrl: './app/views/deal.html',
-            controller: 'DealController'
+            controller: 'oneDealController'
         })
 })
 

@@ -16,7 +16,7 @@ deals = Deal.create([{
   {
     title: 'FREE Vape Battery and Charger!',
     description: 'Gear - Vaporizer and Charger',
-    imgUrl: 'https://images.weedmaps.com/pictures/listings/761/637/070/large/1840200_IMG_0887.JPG',
+    imgUrl: 'http://vaporsmooth.com/wp-content/uploads/2016/09/Oil-Vape-Pen-O.PenVape.jpg',
     shops_id: 2
   },
   {
