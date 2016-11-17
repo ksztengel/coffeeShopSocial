@@ -1,3 +1,4 @@
 class Deal < ActiveRecord::Base
-  has_one :shop
+  belongs_to :shop
+
 end

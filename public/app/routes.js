@@ -29,7 +29,7 @@ app.config(function($routeProvider) {
         })
         .when('/dealform', {
             templateUrl: './app/views/dealsForm.html',
-            controller: 'dealFormController'
+            controller: 'DealController'
         })
 })
 
