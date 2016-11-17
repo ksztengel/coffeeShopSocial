@@ -5,15 +5,15 @@
 <form>
  <div class="form-group">
    <label for="name">Deal Name</label>
-   <input ng-model="deal.name" type="text" class="form-control" id="name" placeholder="Name of the deal">
+   <input ng-model="deal.name" type="text" class="form-control" id="name" placeholder="Name of the deal" name="deals[title]">
  </div>
  <div class="form-group">
    <label for="dealDescription">Description</label>
-   <input ng-model="deal.description" type="text" class="form-control" id="dealDescription" placeholder="Description of your new deal">
+   <input ng-model="deal.description" type="text" class="form-control" id="dealDescription" placeholder="Description of your new deal" name="deals[description]">
  </div>
  <div class="form-group">
    <label for="dealImg">Image</label>
-   <input ng-model="deal.imgUrl" type="text" class="form-control" id="dealImg" placeholder="Image of your product">
+   <input ng-model="deal.imgUrl" type="text" class="form-control" id="dealImg" placeholder="Image of your product" name="deal[imgUrl]">
  </div>
 
  <button ng-sumbit="newDeal(deal)" type="submit" class="btn btn-default">Create</button>
