@@ -27,9 +27,9 @@ app.config(function($routeProvider) {
             templateUrl: './app/views/deal.html',
             controller: 'oneDealController'
         })
-        .when('/dealfrom', {
-            templateUrl: './app/vies/dealsForm.html',
-            controller: ''
+        .when('/dealform', {
+            templateUrl: './app/views/dealsForm.html',
+            controller: 'dealFormController'
         })
 })
 

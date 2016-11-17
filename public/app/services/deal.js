@@ -19,3 +19,7 @@ app.service('DealService', function($http) {
         }
 
       }})
+
+app.service('newDealService', function(){
+  console.log('ok what now');
+})

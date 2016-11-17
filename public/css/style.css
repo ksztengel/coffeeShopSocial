@@ -28,7 +28,7 @@ img {
   opacity: 1;
 }
 
-.container {
+.searchBar {
   position: relative;
   bottom: 25em;
   width: 32em;
@@ -38,10 +38,6 @@ img {
   padding-top: 1.45em;
   padding-bottom: 1em;
   padding-left: 0em;
-}
-
-.content {
-
 }
 
 .highlight {
@@ -57,3 +53,16 @@ img {
 .highlight.on-remove {
   color:black;
 }
+
+/*.heroImg{
+  transition: 2s bounceOutUp all;
+}
+.heroImg.on-add{
+  animation: bounceOutUp 2s;
+}
+.heroImg.on {
+  animation: bounceOutUp 2s;
+}
+.heroImg.on-remove {
+  opacity: .5;
+}*/
