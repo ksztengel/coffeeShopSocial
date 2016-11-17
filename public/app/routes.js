@@ -3,7 +3,7 @@ app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl: './app/views/main.html',
-            controller: 'ShopController'
+            controller: 'DealController'
         })
         .when('/signup', {
             templateUrl: './app/views/businessSignup.html',
@@ -14,11 +14,11 @@ app.config(function($routeProvider) {
             controller: 'DealController'
 
         })
-        .when('/deals', {
-            templateUrl: './app/views/deals.html',
-            controller: 'DealController'
-
-        })
+        // .when('/deals', {
+        //     templateUrl: './app/views/deals.html',
+        //     controller: 'DealController'
+        //
+        // })
         .when('/login', {
             templateUrl: './app/views/businessLogin.html',
             controller: 'BusinessController'
@@ -29,7 +29,7 @@ app.config(function($routeProvider) {
         })
         .when('/dealform', {
             templateUrl: './app/views/dealsForm.html',
-            controller: 'dealFormController'
+            controller: 'DealController'
         })
 })
 
