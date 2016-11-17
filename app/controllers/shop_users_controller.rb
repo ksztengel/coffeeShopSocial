@@ -1,5 +1,7 @@
 class ShopUsersController < ApplicationController
   before_action :set_shop_user, only: [:show, :edit, :update, :destroy]
+  # protect_from_forgery with: :null_session
+
 
   # GET /shop_users
   # GET /shop_users.json
@@ -23,7 +25,11 @@ class ShopUsersController < ApplicationController
 
   # POST /shop_users
   # POST /shop_users.json
+  skip_before_action :verify_authenticity_token
   def create
+    Rails.logger.debug(params)
+    Rails.logger.debug(shop_user_params)
+
     @shop_user = ShopUser.new(shop_user_params)
 
     respond_to do |format|
@@ -69,6 +75,6 @@ class ShopUsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def shop_user_params
-      params.require(:shop_user).permit(:name, :email, :password_hash, :password_salt)
+      params.require(:shop_user).permit(:name, :email, :password)
     end
 end
