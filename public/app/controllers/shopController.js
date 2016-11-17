@@ -9,9 +9,11 @@ app.controller('ShopController', function ($scope, ShopService, $routeParams, $l
     })
 
     var id = $routeParams.id
+    if(id){
     ShopService.one(id).then(results => {
         $scope.oneShop = results.data
 
     })
+  }
 
   })

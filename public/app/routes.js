@@ -21,11 +21,11 @@ app.config(function($routeProvider) {
         })
         .when('/newuser', {
             templateUrl: './app/views/userSignup.html',
-            controller: 'DealController'
+            controller: 'UserController'
         })
         .when('/deal/:id', {
             templateUrl: './app/views/deal.html',
-            controller: 'DealController'
+            controller: 'oneDealController'
         })
         .when('/dealfrom', {
             templateUrl: './app/vies/dealsForm.html',
