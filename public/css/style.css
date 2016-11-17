@@ -1,14 +1,14 @@
-
 .mainText {
-  font-family: 'Rye', cursive;
-  /*color: red;*/
-  text-align: center;
-  font-size: 7em;
-  position: relative;
-  top: 1.5em;
-  z-index: 1;
-  /*text-shadow: .04em .04em black;*/
+    font-family: 'Rye', cursive;
+    /*color: red;*/
+    text-align: center;
+    font-size: 7em;
+    position: relative;
+    top: 1.5em;
+    z-index: 1;
+    /*text-shadow: .04em .04em black;*/
 }
+
 
 /*.mainText.ng-hide {
   transition:0.5s linear all;
@@ -16,60 +16,66 @@
 }*/
 
 .imgContainer {
-  position: relative;
-  bottom: 10em;
-  width: 100%;
-  height: 37em;
-
+    position: relative;
+    bottom: 10em;
+    width: 100%;
+    height: 37em;
 }
 
 img {
-  width: 100%;
-  height: auto;
-  opacity: 1;
+    width: 100%;
+    height: auto;
+    opacity: 1;
 }
 
 .searchBar {
-  position: relative;
-  bottom: 25em;
-  width: 32em;
+    position: relative;
+    bottom: 25em;
+    width: 32em;
 }
 
 .button {
-  padding-top: 1.45em;
-  padding-bottom: 1em;
-  padding-left: 0em;
+    padding-top: 1.45em;
+    padding-bottom: 1em;
+    padding-left: 0em;
 }
 
-
 .card-img {
-  width:100%;
-  height:250px;
+    width: 100%;
+    height: 250px;
 }
 
 #cards {
-  align-items: center;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  height: 60vh;
-  margin-bottom: 3%;
+    padding-left: 10px;
+    position: relative;
+    align-items: center;
+    height: 60vh;
+    margin-bottom: 3%;
 }
 
 .card-block {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
+
 .highlight {
-  transition:0.05s linear all;
+    transition: 0.05s linear all;
 }
+
 .highlight.on-add {
-  background:white;
+    background: white;
 }
+
 .highlight.on {
-  color:red;
-  text-shadow: .02em .02em black;
+    color: red;
+    text-shadow: .02em .02em black;
 }
+
 .highlight.on-remove {
-  color:black;
+    color: black;
 }
+
+.btn {}
+
 
 /*.heroImg{
   transition: 2s bounceOutUp all;
@@ -84,3 +90,9 @@ img {
 .heroImg.on-remove {
   opacity: .5;
 }*/
+
+body {
+    font-family: 'Slabo 27px', serif;
+}
+
+#mapid { height: 180px; }
