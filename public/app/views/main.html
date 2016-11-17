@@ -1,20 +1,21 @@
-<h1 class="mainText">Coffee Shop Social</h1>
-<div class="imgContainer" id="parallax">
+<h1 ng-class="{on:onOff}" class="mainText highlight">Coffee Shop Social</h1>
+<div class="imgContainer">
+
     <div class="heroImg">
         <img src="./images/CoffeeStand_3.jpg" />
     </div>
 </div>
 <div class="row">
-    <div class="container">
+    <div class="container searchBar">
         <form>
-            <div class="col-sm-9 searchBar">
+            <div class="col-sm-9">
                 <div class="form-group">
                     <label for="search"></label>
                     <input type="text" class="form-control" id="search" placeholder="Search">
                 </div>
             </div>
             <div class="col-sm-3 button">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button ng-click="onOff = !onOff" type="submit" class="btn btn-default">Submit</button>
             </div>
         </form>
     </div>
