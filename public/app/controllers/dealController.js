@@ -8,11 +8,6 @@ app.controller('DealController', function ($scope, DealService, $routeParams, $l
         console.log("deals.data", deals.data);
     })
 
-    var id = $routeParams.id
-    DealService.one(id).then(results => {
-        $scope.oneDeal = results.data
-
-    })
 
     $scope.submitNew = function() {
         DealService.new($scope.deal).then(newDeal => {

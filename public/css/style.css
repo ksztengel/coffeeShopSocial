@@ -1,20 +1,26 @@
 
 .mainText {
   font-family: 'Rye', cursive;
-  color: red;
+  /*color: red;*/
   text-align: center;
   font-size: 7em;
   position: relative;
   top: 1.5em;
   z-index: 1;
-  text-shadow: .04em .04em black;
+  /*text-shadow: .04em .04em black;*/
 }
+
+/*.mainText.ng-hide {
+  transition:0.5s linear all;
+  opacity:0;
+}*/
 
 .imgContainer {
   position: relative;
   bottom: 10em;
   width: 100%;
   height: 37em;
+  
 }
 
 img {
@@ -23,7 +29,7 @@ img {
   opacity: 1;
 }
 
-.container {
+.searchBar {
   position: relative;
   bottom: 25em;
   width: 32em;
@@ -35,6 +41,29 @@ img {
   padding-left: 0em;
 }
 
-.content {
-
+.highlight {
+  transition:0.05s linear all;
 }
+.highlight.on-add {
+  background:white;
+}
+.highlight.on {
+  color:red;
+  text-shadow: .02em .02em black;
+}
+.highlight.on-remove {
+  color:black;
+}
+
+/*.heroImg{
+  transition: 2s bounceOutUp all;
+}
+.heroImg.on-add{
+  animation: bounceOutUp 2s;
+}
+.heroImg.on {
+  animation: bounceOutUp 2s;
+}
+.heroImg.on-remove {
+  opacity: .5;
+}*/

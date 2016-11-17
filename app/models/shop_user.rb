@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class ShopUser < ActiveRecord::Base
   attr_accessor :password
  validates_confirmation_of :password
  before_save :encrypt_password

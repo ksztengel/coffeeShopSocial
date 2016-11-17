@@ -19,13 +19,17 @@ app.config(function($routeProvider) {
             controller: 'DealController'
 
         })
-        .when('/newuser', {
-            templateUrl: './app/views/userSignup.html',
-            controller: 'DealController'
+        .when('/login', {
+            templateUrl: './app/views/businessLogin.html',
+            controller: 'BusinessController'
         })
         .when('/deal/:id', {
             templateUrl: './app/views/deal.html',
-            controller: 'DealController'
+            controller: 'oneDealController'
+        })
+        .when('/dealform', {
+            templateUrl: './app/views/dealsForm.html',
+            controller: 'dealFormController'
         })
 })
 
