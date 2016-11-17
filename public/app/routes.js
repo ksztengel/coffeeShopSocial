@@ -27,6 +27,10 @@ app.config(function($routeProvider) {
             templateUrl: './app/views/deal.html',
             controller: 'DealController'
         })
+        .when('/dealfrom', {
+            templateUrl: './app/vies/dealsForm.html',
+            controller: ''
+        })
 })
 
 console.log('routes included');
