@@ -14,11 +14,6 @@ app.config(function($routeProvider) {
             controller: 'DealController'
 
         })
-        // .when('/deals', {
-        //     templateUrl: './app/views/deals.html',
-        //     controller: 'DealController'
-        //
-        // })
         .when('/login', {
             templateUrl: './app/views/businessLogin.html',
             controller: 'BusinessController'
