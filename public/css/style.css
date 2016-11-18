@@ -95,4 +95,23 @@ body {
     font-family: 'Slabo 27px', serif;
 }
 
-#mapid { height: 180px; }
+
+#map {
+  /*height: 200px;*/
+  width: 100%;
+  position: absolute;
+}
+
+#menu {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}
