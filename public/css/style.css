@@ -132,4 +132,30 @@ img {
   transition: 2s bounceOutUp all;
 }*/
 
+
+body {
+    font-family: 'Slabo 27px', serif;
+}
+
+
+#map {
+  /*height: 200px;*/
+  width: 100%;
+  position: absolute;
+}
+
+#menu {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}
+
 #mapid { height: 180px; }
