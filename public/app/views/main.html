@@ -11,7 +11,7 @@
             <div class="col-sm-9">
                 <div class="form-group">
                     <label for="search"></label>
-                    <input type="text" class="form-control" id="search" placeholder="Search">
+                    <input ng-model="searchText" type="text" class="form-control" id="search" placeholder="Search">
                 </div>
             </div>
             <div class="col-sm-3 button">
@@ -22,7 +22,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <div ng-repeat="deal in deals | filter: searching" class="card col-sm-4" id="cards">
+        <div ng-repeat="deal in deals | filter: searchText" class="card col-sm-4" id="cards">
             <img class="card-img-top card-img" ng-src={{deal.imgUrl}} alt="Card image cap">
             <div class="card-block">
 
