@@ -23,7 +23,7 @@
 <div class="container">
     <div class="row">
         <div ng-repeat="deal in deals | filter: searching" class="card col-sm-4" id="cards">
-            <img class="card-img-top card-img" src="{{deal.imgUrl}}" alt="Card image cap">
+            <img class="card-img-top card-img" ng-src="{{deal.imgUrl}}" alt="Card image cap">
             <div class="card-block">
 
                 <h4 class="card-title">{{deal.title}}</h4>
