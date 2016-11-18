@@ -1,10 +1,16 @@
-<h1 ng-class="{on:onOff}" class="mainText highlight">Coffee Shop Social</h1>
+
+<h1 class="mainText">Coffee Shop Social</h1>
+<div class="tagLineDiv">
+  <p class="tagLine">Helping people and businesses find each other through great deals on cannabis</p>
+</div>
+
 <div class="imgContainer">
 
     <div class="heroImg">
         <img src="./images/CoffeeStand_3.jpg" />
     </div>
 </div>
+
 <div class="row">
     <div class="container searchBar">
         <form>
@@ -15,14 +21,16 @@
                 </div>
             </div>
             <div class="col-sm-3 button">
-                <button ng-click="onOff = !onOff" type="submit" class="btn btn-default">Submit</button>
+                <button ng-click="bool=!bool" type="submit" class="btn btn-default">Submit</button>
             </div>
         </form>
     </div>
 </div>
+
+
 <div class="container">
-    <div class="row">
-        <div ng-repeat="deal in deals | filter: searchText" class="card col-sm-4" id="cards">
+    <div class="row dealsRow">
+        <div ng-repeat="deal in deals | filter: searchText" class="card col-xs-12 col-sm-6 col-md-4 col-lg-4" id="cards">
             <img class="card-img-top card-img" ng-src={{deal.imgUrl}} alt="Card image cap">
             <div class="card-block">
 
