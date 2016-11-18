@@ -4,7 +4,7 @@ app.service('DealService', function($http) {
         all: function() {
             return $http.get('/deals.json');
         },
-        all: function() {
+        allShops: function() {
             return $http.get('/shops.json');
         },
         one: function(id) {

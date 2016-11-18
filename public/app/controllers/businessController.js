@@ -1,4 +1,4 @@
-app.controller('BusinessController', function($scope, BusinessService) {
+app.controller('BusinessController', function($scope, BusinessService, $location) {
     console.log('in business controller');
 
     $scope.businessObj = {}
@@ -7,7 +7,7 @@ app.controller('BusinessController', function($scope, BusinessService) {
         BusinessService.signup(object).then(function(response) {
             console.log(object);
             console.log(response);
-
+            $location.url('/dealform')
         })
 
     $scope.login = function(object) {
@@ -18,3 +18,4 @@ app.controller('BusinessController', function($scope, BusinessService) {
         }
     }
 })
+//need cookies

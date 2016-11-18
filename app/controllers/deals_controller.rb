@@ -4,13 +4,13 @@ class DealsController < ApplicationController
   # GET /deals
   # GET /deals.json
   def index
-    @deals = Deal.all
+    @deals = Deal.includes(:shop).all
   end
 
   # GET /deals/1
   # GET /deals/1.json
   def show
-    @deal = Deal.find(params[:id])
+    @deal = Deal.includes(:shop).find(params[:id])
   end
 
   # GET /deals/new
