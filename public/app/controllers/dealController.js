@@ -2,7 +2,7 @@
 app.controller('DealController', function ($scope, DealService, $routeParams, $location) {
     console.log('in deal controller');
 
-    DealService.all().then(shops => {
+    DealService.allShops().then(shops => {
         $scope.shops = shops
         console.log("shop", shops);
         console.log("shops.data", shops.data);

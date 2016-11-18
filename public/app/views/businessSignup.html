@@ -2,10 +2,6 @@
     <div id="signup" class="col-xs-6 col-xs-offset-3">
         <form name="authForm">
             <h3>Signup and Share Your Deals!</h3>
-            <div ng-class="{'has-error':authForm.name.$invalid && authForm.name.$dirty, 'has-success': authForm.name.$valid}" class="form-group">
-                <label class="control-label" for="name">Name</label>
-                <input class="form-control" id="name" ng-model="userObj.name" type="text" name="shop_user[name]" placeholder="Store Name" required>
-            </div>
             <div ng-class="{'has-error':authForm.email.$invalid && authForm.email.$dirty, 'has-success': authForm.email.$valid}" class="form-group">
                 <label class="control-label" for="email">Email</label>
                 <input class="form-control" id="email" ng-model="userObj.email" type="text" name="shop_user[email]" placeholder="Email" required>

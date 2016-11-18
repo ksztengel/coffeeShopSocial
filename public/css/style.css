@@ -1,11 +1,11 @@
 .mainText {
     font-family: 'Rye', cursive;
-    /*color: red;*/
     text-align: center;
     font-size: 7em;
     position: relative;
     top: 1.5em;
     z-index: 1;
+    /*color: red;*/
     /*text-shadow: .04em .04em black;*/
 }
 
@@ -77,10 +77,10 @@ img {
 .btn {}
 
 
-/*.heroImg{
+.heroImg{
   transition: 2s bounceOutUp all;
 }
-.heroImg.on-add{
+/*.heroImg.on-add{
   animation: bounceOutUp 2s;
 }
 .heroImg.on {
