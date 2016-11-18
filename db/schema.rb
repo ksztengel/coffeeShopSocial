@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161115212405) do
+ActiveRecord::Schema.define(version: 20161117190030) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20161115212405) do
     t.string   "title"
     t.text     "description"
     t.string   "imgUrl"
-    t.integer  "shops_id"
+    t.integer  "shop_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20161115212405) do
     t.string   "password_salt"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
-    t.integer  "shops_id"
+    t.integer  "shop_id"
   end
 
   create_table "shops", force: :cascade do |t|
@@ -45,7 +45,6 @@ ActiveRecord::Schema.define(version: 20161115212405) do
     t.datetime "updated_at", null: false
     t.float    "latitude"
     t.float    "longitude"
-
   end
 
 end

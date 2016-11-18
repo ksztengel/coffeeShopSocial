@@ -1,22 +1,19 @@
-
 <div class="container">
-
-<h3>Please fill in the fields below to create a new deal</h3>
-<form>
- <div class="form-group">
-   <label for="name">Deal Name</label>
-   <input ng-model="deal.name" type="text" class="form-control" id="name" placeholder="Name of the deal" name="deals[title]">
- </div>
- <div class="form-group">
-   <label for="dealDescription">Description</label>
-   <input ng-model="deal.description" type="text" class="form-control" id="dealDescription" placeholder="Description of your new deal" name="deals[description]">
- </div>
- <div class="form-group">
-   <label for="dealImg">Image</label>
-   <input ng-model="deal.imgUrl" type="text" class="form-control" id="dealImg" placeholder="Image of your product" name="deal[imgUrl]">
- </div>
-
- <button ng-sumbit="newDeal(deal)" type="submit" class="btn btn-default">Create</button>
-</form>
-
+    <h3>Please fill in the fields below to create a new deal</h3>
+        <form name="dealForm">
+            <div class="form-group">
+                <label for="name">Deal Name</label>
+                <input ng-model="deal.name" type="text" class="form-control" id="name" placeholder="Name of the deal" name="deal[title]">
+            </div>
+            <div class="form-group">
+                <label for="dealDescription">Description</label>
+                <input ng-model="deal.description" type="text" class="form-control" id="dealDescription" placeholder="Description of your new deal" name="deal[description]">
+            </div>
+            <div class="form-group">
+                <label for="dealImg">Image</label>
+                <input ng-model="deal.imgUrl" type="text" class="form-control" id="dealImg" placeholder="Image of your product" name="deal[imgUrl]">
+            </div>
+            <button ng-click="newDeal(deal)" type="submit" class="btn btn-default">Create</button>
+            <a button href="#/"class="btn btn-default">Back<a/></button>
+        </form>
 </div>

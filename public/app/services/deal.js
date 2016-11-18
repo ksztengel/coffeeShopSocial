@@ -4,11 +4,14 @@ app.service('DealService', function($http) {
         all: function() {
             return $http.get('/deals.json');
         },
+        allShops: function() {
+            return $http.get('/shops.json');
+        },
         one: function(id) {
-          console.log("doing cool http stuff");
+         console.log("doing cool http stuff");
             return $http.get('/deals/' + id + '.json');
         },
-        create: function() {
+        create: function(deal) {
             return $http.post('/deals.json');
         },
         update: function(id) {
@@ -19,7 +22,3 @@ app.service('DealService', function($http) {
         }
 
       }})
-
-app.service('newDealService', function(){
-  console.log('ok what now');
-})

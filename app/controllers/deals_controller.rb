@@ -4,13 +4,13 @@ class DealsController < ApplicationController
   # GET /deals
   # GET /deals.json
   def index
-    @deals = Deal.all
+    @deals = Deal.includes(:shop).all
   end
 
   # GET /deals/1
   # GET /deals/1.json
   def show
-    @deal = Deal.find(params[:id])
+    @deal = Deal.includes(:shop).find(params[:id])
   end
 
   # GET /deals/new
@@ -24,7 +24,10 @@ class DealsController < ApplicationController
 
   # POST /deals
   # POST /deals.json
+  skip_before_action :verify_authenticity_token
   def create
+    Rails.logger.debug(params)
+    Rails.logger.debug(deal_params)
     @deal = Deal.new(deal_params)
 
     respond_to do |format|
@@ -70,6 +73,6 @@ class DealsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def deal_params
-      params.require(:deal).permit(:title, :description, :description, :imgUrl, :shops_id)
+      params.require(:deal).permit(:title, :description, :imgUrl)
     end
 end
