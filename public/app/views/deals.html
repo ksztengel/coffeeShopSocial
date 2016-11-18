@@ -2,15 +2,20 @@
 <div class="container">
     <div class="row">
         <div ng-repeat="deal in deals | filter: searching" class="card col-sm-4" id="cards">
-            <img class="card-img-top card-img" src="{{deal.imgUrl}}" alt="Card image cap">
+            <img class="card-img-top card-img" ng-src={{deal.imgUrl}} alt="Card image cap">
             <div class="card-block">
+                <a href="/#/deals/{{deal.id}}"><button type="button" class="btn btn-info">Get Deal</button></a>
                 <h4 class="card-title">{{deal.title}}</h4>
                 <p class="card-text">{{deal.description}}</p>
                 <p><a href="/#/deals/{{deal.id}}"><span class="glyphicon glyphicon-map-marker" aria-hidden="true" id="mapIcon"></span></a>
+<<<<<<< HEAD
                 </p>
                 {{deal.name}}
+=======
+                {{deal.name}}</p>
+>>>>>>> 8ed1f5c24202011ead186bf0641da9633a8d68a5
                 <!-- <a href="/#/deals/{{deal.id}}" class="btn btn-primary">Get Deal</a> -->
-                <a href="/#/deals/{{deal.id}}"><button type="button" class="btn btn-info">Get Deal</button></a>
+
             </div>
         </div>
     </div>

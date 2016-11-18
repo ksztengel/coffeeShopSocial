@@ -20,9 +20,12 @@ app.controller('oneDealController', function($scope, DealService, $routeParams, 
     map.addControl(new mapboxgl.GeolocateControl());
 
     map.addControl(new mapboxgl.NavigationControl());
+
     var marker = new mapboxgl.Marker()
-        .setLngLat([-74.50, 40])
-        .addTo(map);
+    .setLngLat([30.5, 50.5])
+    .addTo(map);
+
+
 
         // var marker = L.marker([40.047050, -105.272148]).addTo(map);
 
