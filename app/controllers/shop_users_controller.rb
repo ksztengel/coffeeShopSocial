@@ -35,8 +35,12 @@ class ShopUsersController < ApplicationController
     respond_to do |format|
       if @shop_user.save
         format.html { redirect_to @shop_user, notice: 'Shop user was successfully created.' }
+        session[:shop_user_id] = shop_user.id
+        redirect_to '/dealform'
+
         format.json { render :show, status: :created, location: @shop_user }
       else
+        redirect_to '/signup'
         format.html { render :new }
         format.json { render json: @shop_user.errors, status: :unprocessable_entity }
       end

@@ -3,19 +3,15 @@ body {
     background: linear-gradient(295deg, #512400, #FEF4BC);
     color: black;
 }
-
 .navbar {
-  background: #D9D0A0;
+    background: #D9D0A0;
 }
-
 a.navbar-brand.navText {
-  color: black;
+    color: black;
 }
-
 .navbar-default .navbar-nav>li>a {
     color: black;
 }
-
 .mainText {
     font-family: 'Rye', cursive;
     text-align: center;
@@ -26,7 +22,6 @@ a.navbar-brand.navText {
     color: red;
     text-shadow: .04em .04em black;
 }
-
 .tagLine {
     text-align: center;
     color: black;
@@ -36,36 +31,29 @@ a.navbar-brand.navText {
     top: 3.75em;
     z-index: 1;
 }
-
 .tagLineDiv {
-  height: auto;
-  width: 71em;
-  position: relative;
-  margin: auto;
+    height: auto;
+    width: 71em;
+    position: relative;
+    margin: auto;
 }
-
 .imgContainer {
     position: relative;
     bottom: 19em;
     width: 100%;
     height: 35em;
 }
-
 .heroImg {
-  opacity: .9;
+    opacity: .9;
 }
-
-
 .searchBar {
     position: relative;
     bottom: 25em;
     width: 32em;
 }
-
 .dealsRow {
-  margin-top: -15em;
+    margin-top: -15em;
 }
-
 #cards {
     border-radius: 2px;
     padding: 10px 10px 0px 10px;
@@ -74,35 +62,30 @@ a.navbar-brand.navText {
     height: 60vh;
     margin-bottom: 3%;
     background: #fefefe;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 #cards:hover {
-  box-shadow: 0 15px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
 .card-block {
     padding-bottom: 20px;
     padding-left: 15px;
     padding-top: 7px;
 }
-
 img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
-
 .card-img {
     width: 100%;
     height: 250px;
 }
-
 .button {
     padding-top: 1.45em;
     padding-bottom: 1em;
     padding-left: 0em;
 }
-
 #cards {
     border-radius: 2px;
     padding: 10px 10px 0px 10px;
@@ -111,54 +94,55 @@ img {
     height: 60vh;
     margin-bottom: 3%;
     background: #fefefe;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
-
 #cards:hover {
-  box-shadow: 0 15px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
 .card-block {
     padding-bottom: 20px;
     padding-left: 15px;
     padding-top: 7px;
 }
-
 #oneDeal {
-  border-radius: 2px;
-  padding: 10px 10px 0px 10px;
-  position: relative;
-  align-items: center;
-  margin-bottom: 3%;
-  background: #fefefe;
-  box-shadow: 0 9px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 2px;
+    padding: 10px 10px 0px 10px;
+    position: relative;
+    align-items: center;
+    margin-bottom: 3%;
+    background: #fefefe;
+    box-shadow: 0 9px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-
 #mapid {
-  height: 180px;
+    height: 180px;
 }
-
-/*.highlight {
-    transition: 0.05s linear all;
+.heroImg {
+    transition: 2s bounceOutUp all;
 }
-
-.highlight.on-add {
-    background: white;
+.ng-enter {
+    animation: scaleUp 0.5s both ease-in;
+    z-index: 8888;
 }
-
-.highlight.on {
-    color: red;
-    text-shadow: .02em .02em black;
+.ng-leave {
+    animation: slideOutRight 0.5s both ease-in;
+    z-index: 9999;
 }
-
-.highlight.on-remove {
-    color: black;
-}*/
-
-.heroImg{
-  transition: 2s bounceOutUp all;
+#map {
+    /*height: 200px;*/
+    width: 100%;
+    position: absolute;
 }
-.ng-enter { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
-.ng-leave { animation: slideOutRight 0.5s both ease-in; z-index: 9999; }
-.ng-leave.img { animation: slideOutRight 0.5s both ease-in; z-index: 9999; }
+#menu {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}

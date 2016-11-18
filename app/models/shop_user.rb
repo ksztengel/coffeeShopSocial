@@ -8,4 +8,5 @@ class ShopUser < ActiveRecord::Base
   end
   def self.authenticate(email, password)
   end
+  has_secure_password
  end

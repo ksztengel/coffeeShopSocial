@@ -1,11 +1,14 @@
 'use strict'
 app.controller('DealController', function ($scope, DealService, $routeParams, $location) {
     console.log('in deal controller');
-
+//deal.shops?  
     DealService.allShops().then(shops => {
         $scope.shops = shops
         console.log("shop", shops);
-        console.log("shops.data", shops.data);
+        console.log("shops.data[83].name", shops.data[83].name);
+        console.log("shops.data[83].lat", shops.data[83].latitude);
+        console.log("shops.data[83].long", shops.data[83].longitude);
+        console.log("shops.data[83].id", shops.data[83].id);
     })
 
     $scope.view = {}

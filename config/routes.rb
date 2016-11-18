@@ -5,4 +5,9 @@ Rails.application.routes.draw do
   resources :users
   resources :deals
   resources :shops
+
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+
+
 end
