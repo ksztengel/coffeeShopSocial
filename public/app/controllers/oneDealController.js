@@ -6,6 +6,7 @@ app.controller('oneDealController', function($scope, DealService, $routeParams, 
     var id = $routeParams.id
     DealService.one(id).then(results => {
         $scope.oneDeal = results.data
+        console.log("oneDeal", $scope.oneDeal);
     })
 
     mapboxgl.accessToken = 'pk.eyJ1IjoiY291cnRuZXlzYW5kZXJzIiwiYSI6ImNpdm10ZmF5dzAwMGUydGs0bGNkeXU4eXIifQ.sOriWj2-8p2AX_FkDR-sfQ';
