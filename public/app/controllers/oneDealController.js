@@ -6,6 +6,7 @@ app.controller('oneDealController', function ($scope, DealService, $routeParams,
     var id = $routeParams.id
     DealService.one(id).then(results => {
         $scope.oneDeal = results.data
+        console.log("oneDeal", $scope.oneDeal);
     })
 
     // $scope.submitNew = function() {
