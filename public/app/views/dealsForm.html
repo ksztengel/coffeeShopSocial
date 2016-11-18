@@ -1,50 +1,19 @@
-
-<div class="row">
-    <div id="signup" class="col-xs-6 col-xs-offset-3">
-        <form name="authForm">
-            <h3>Login</h3>
-            <div ng-class="{'has-error':authForm.email.$invalid && authForm.email.$dirty, 'has-success': authForm.email.$valid}" class="form-group">
-                <label class="control-label" for="email">Email</label>
-                <input class="form-control" id="email" ng-model="userObj.email" type="text" name="email" placeholder="Email" required>
-            </div>
-            <div ng-class="{'has-error':authForm.password.$invalid && authForm.password.$dirty, 'has-success': authForm.password.$valid}" class="form-group">
-                <label class=control-label class=control-label for="password">Password</label>
-                <input class="form-control" id="password" ng-model="userObj.password" type="password" name="password" placeholder="Password" required>
-            </div>
-            <button ng-click="login(businessObj)" type="button" class="btn btn-success btn-lg">
-                Login
-            </button>
-        </form>
-    </div>
-</div>
-
-<input ng-model="searchText" type="text">
-<div ng-repeat="deal in deals">
-  <div ng-show="searchText">
-    {{deal.whatever}}
-  </div>
-</div>
-
-
-
 <div class="container">
+    <h3>Please fill in the fields below to create a new deal</h3>
+        <form name="dealForm">
+            <div class="form-group">
+                <label for="name">Deal Name</label>
+                <input ng-model="deal.name" type="text" class="form-control" id="name" placeholder="Name of the deal" name="deal[title]">
+            </div>
+            <div class="form-group">
+                <label for="dealDescription">Description</label>
+                <input ng-model="deal.description" type="text" class="form-control" id="dealDescription" placeholder="Description of your new deal" name="deal[description]">
+            </div>
+            <div class="form-group">
+                <label for="dealImg">Image</label>
+                <input ng-model="deal.imgUrl" type="text" class="form-control" id="dealImg" placeholder="Image of your product" name="deal[imgUrl]">
+            </div>
 
-<h3>Please fill in the fields below to create a new deal</h3>
-<form method="post" name="dealForm">
- <div class="form-group">
-   <label for="name">Deal Name</label>
-   <input ng-model="deal.name" type="text" class="form-control" id="name" placeholder="Name of the deal" name="deals[title]">
- </div>
- <div class="form-group">
-   <label for="dealDescription">Description</label>
-   <input ng-model="deal.description" type="text" class="form-control" id="dealDescription" placeholder="Description of your new deal" name="deals[description]">
- </div>
- <div class="form-group">
-   <label for="dealImg">Image</label>
-   <input ng-model="deal.imgUrl" type="text" class="form-control" id="dealImg" placeholder="Image of your product" name="deal[imgUrl]">
- </div>
-
- <button ng-sumbit="newDeal(deal)" type="submit" class="btn btn-default">Create</button>
-</form>
-
+            <button ng-click="newDeal(deal)" type="submit" class="btn btn-default">Create</button>
+        </form>
 </div>

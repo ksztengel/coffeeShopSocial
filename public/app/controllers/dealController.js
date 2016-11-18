@@ -1,6 +1,13 @@
 'use strict'
 app.controller('DealController', function ($scope, DealService, $routeParams, $location) {
     console.log('in deal controller');
+
+    DealService.all().then(shops => {
+        $scope.shops = shops
+        console.log("shop", shops);
+        console.log("shops.data", shops.data);
+    })
+
     $scope.view = {}
     DealService.all().then(deals => {
         $scope.deals = deals.data
@@ -9,13 +16,10 @@ app.controller('DealController', function ($scope, DealService, $routeParams, $l
     })
 
 
-    $scope.submitNew = function() {
-        DealService.new($scope.deal).then(newDeal => {
-            $scope.deals.push($scope.deal),
-                $scope.deal = {},
-                $scope.dealForm.$setPristine(),
-                $scope.newDeal = {}
-
+    $scope.newDeal = function(formData) {
+      console.log("in new Deal", formData);
+        DealService.create(formData).then(newDeal => {
+            console.log("newDeal", newDeal);
         })
     }
 

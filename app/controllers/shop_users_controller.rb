@@ -1,6 +1,6 @@
 class ShopUsersController < ApplicationController
   before_action :set_shop_user, only: [:show, :edit, :update, :destroy]
-  # protect_from_forgery with: :null_session
+
 
 
   # GET /shop_users
