@@ -12,7 +12,7 @@ app.service('DealService', function($http) {
             return $http.get('/deals/' + id + '.json');
         },
         create: function(deal) {
-            return $http.post('/deals.json');
+            return $http.post('/deals.json', deal);
         },
         update: function(id) {
             return $http.put('/deals/' + id + '.json');

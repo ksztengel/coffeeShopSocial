@@ -7,6 +7,4 @@ class Shop < ActiveRecord::Base
   def full_street_address
     [address, city, state,zip ].compact.join(', ')
   end
-
-
 end
